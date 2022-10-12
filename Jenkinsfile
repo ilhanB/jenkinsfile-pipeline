@@ -8,9 +8,14 @@ pipeline {
                 echo 'not using shell in the Jenkinsfile'
             }
         }
-        stage('test') {
+        stage('test1') {
             steps {
                 echo "Hello world"
+            }
+        }
+        stage('test2') {
+            steps {
+                echo "Goodbye world"
             }
         }
         stage('deploy') {
