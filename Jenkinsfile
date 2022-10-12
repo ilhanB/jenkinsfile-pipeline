@@ -13,6 +13,11 @@ pipeline {
                 echo "Hello world"
             }
         }
+        stage('test2') {
+            steps {
+                echo "Goodbye world"
+            }
+        }        
         stage('deploy') {
             steps {
                 echo "this is deploy stage"
