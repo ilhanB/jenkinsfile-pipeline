@@ -13,7 +13,14 @@ pipeline {
                 echo "Hello world"
             }
         }
-        stage('test2') {
+        stage('run') {
+            steps {
+                echo 'Clarusway_Way to Reinvent Yourself'
+                sh 'python --version'
+                sh 'python hello-world.py'
+            }
+        }
+	stage('test2') {
             steps {
                 echo "Goodbye world"
             }
